@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grupo A · Tienda Campus</title>
+<meta name="description" content="Prototipo del experimento: condición del grupo A (reseñas negativas).">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f4fd8'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3ETC%3C/text%3E%3C/svg%3E">
+</head>
+<body data-grupo-label="A">
+<nav class="rbar" aria-label="Navegación del prototipo">
+  <div class="rbar__in">
+    <span class="rbar__tag">Prototipo · TIF C094</span>
+    <div class="rbar__tabs"><a class="rbar__tab" href="index.html">Portada</a><a class="rbar__tab" href="grupo-a.html" aria-current="page"><span class="dot dot--a"></span>Grupo A</a><a class="rbar__tab" href="grupo-b.html"><span class="dot dot--b"></span>Grupo B</a><a class="rbar__tab" href="grupo-c.html"><span class="dot dot--c"></span>Grupo C</a></div>
+    <button class="rbar__toggle" type="button" data-toggle-view aria-pressed="false">Ver como participante</button>
+  </div>
+</nav>
+
+<div class="rnote" role="note"><div class="rnote__in">
+  <strong>Grupo A · Reseñas negativas.</strong> Ve una calificación de seguridad de 1 sobre 5. Todo lo demás (producto, precio, diseño, método de pago, ubicación y tamaño de la calificación) es idéntico en los tres grupos.
+</div></div>
+
+<header class="shop-head">
+  <div class="shop-head__in">
+    <a class="logo" href="#" aria-label="Tienda Campus"><span class="logo__mark">TC</span>Tienda Campus</a>
+    <div class="steps" aria-label="Pasos de la compra"><span>Carrito</span><i></i><span>Envío</span><i></i><b>Pago</b></div>
+  </div>
+</header>
+
+<main class="shop">
+  <h1>Finalizá tu compra</h1>
+  <div class="grid">
+    <div>
+      <section class="card" aria-labelledby="prod-t">
+        <div class="product">
+          <div class="product__img"><svg viewBox="0 0 200 200" aria-hidden="true">
+  <path d="M40 112 C40 58 72 30 100 30 C128 30 160 58 160 112" fill="none" stroke="#1d2433" stroke-width="12" stroke-linecap="round"/>
+  <path d="M46 108 C46 64 74 40 100 40 C126 40 154 64 154 108" fill="none" stroke="#3a4560" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+  <rect x="24" y="100" width="40" height="64" rx="18" fill="#1d2433"/>
+  <rect x="136" y="100" width="40" height="64" rx="18" fill="#1d2433"/>
+  <rect x="34" y="110" width="20" height="44" rx="10" fill="#2f3a55"/>
+  <rect x="146" y="110" width="20" height="44" rx="10" fill="#2f3a55"/>
+  <circle cx="160" cy="118" r="3" fill="#1f4fd8"/>
+</svg></div>
+          <div class="product__meta">
+            <div class="product__sku">Artículo 1 de 1</div>
+            <h2 id="prod-t">Auriculares inalámbricos Sonaro Air 2</h2>
+            <ul class="product__list">
+              <li>Bluetooth 5.3, hasta 30 h de batería</li>
+              <li>Cancelación de ruido para estudiar en la biblioteca</li>
+              <li>Color negro, incluye cable USB-C</li>
+            </ul>
+            <div class="qty">Cantidad <span>1</span></div>
+          </div>
+        </div>
+        <p class="illus-note">Producto de ejemplo: ilustra el "producto X" que los participantes eligieron en la encuesta previa. La marca es ficticia.</p>
+        <div style="height:18px"></div>
+      </section>
+
+      <section class="card ship" aria-label="Entrega">
+        <div class="ship__ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div>
+          <h3>Retiro sin cargo en el campus</h3>
+          <p>Lo retirás en 3 días hábiles. Envío a domicilio no disponible en esta prueba.</p>
+        </div>
+      </section>
+    </div>
+
+    <aside class="card summary" aria-labelledby="sum-t">
+      <h2 id="sum-t">Resumen</h2>
+      <div class="row"><span>Sonaro Air 2 × 1</span><span>$45.000</span></div>
+      <div class="row"><span>Retiro en el campus</span><span>Gratis</span></div>
+      <div class="row row--total"><span>Total</span><span>$45.000</span></div>
+
+      <div class="pay">
+        <div class="pay__label">Método de pago</div>
+        <div class="pay__method">
+          <span class="nexo" aria-hidden="true">N</span>
+          <div><b>Billetera Nexo</b><span>Pago digital integrado</span></div>
+          <span class="pay__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
+        </div>
+
+        <section class="sec" aria-labelledby="sec-t">
+          <h3 class="sec__title" id="sec-t"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>Calificación de seguridad del método de pago digital</h3>
+          <div class="sec__score">
+            <div class="sec__num">1<small> / 5</small></div>
+            <div>
+              <div class="stars" role="img" aria-label="1 de 5 estrellas"><span class="star"><svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.6l2.85 6.06 6.65.78-4.92 4.55 1.31 6.57L12 17.27l-5.89 3.29 1.31-6.57L2.5 9.44l6.65-.78z"/></svg><svg class="on" viewBox="0 0 24 24" aria-hidden="true" style="clip-path: inset(0 0% 0 0)"><path fill="currentColor" d="M12 2.6l2.85 6.06 6.65.78-4.92 4.55 1.31 6.57L12 17.27l-5.89 3.29 1.31-6.57L2.5 9.44l6.65-.78z"/></svg></span><span class="star"><svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.6l2.85 6.06 6.65.78-4.92 4.55 1.31 6.57L12 17.27l-5.89 3.29 1.31-6.57L2.5 9.44l6.65-.78z"/></svg><svg class="on" viewBox="0 0 24 24" aria-hidden="true" style="clip-path: inset(0 100% 0 0)"><path fill="currentColor" d="M12 2.6l2.85 6.06 6.65.78-4.92 4.55 1.31 6.57L12 17.27l-5.89 3.29 1.31-6.57L2.5 9.44l6.65-.78z"/></svg></span><span class="star"><svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.6l2.85 6.06 6.65.78-4.92 4.55 1.31 6.57L12 17.27l-5.89 3.29 1.31-6.57L2.5 9.44l6.65-.78z"/></svg><svg class="on" viewBox="0 0 24 24" aria-hidden="true" style="clip-path: inset(0 100% 0 0)"><path fill="currentColor" d="M12 2.6l2.85 6.06 6.65.78-4.92 4.55 1.31 6.57L12 17.27l-5.89 3.29 1.31-6.57L2.5 9.44l6.65-.78z"/></svg></span><span class="star"><svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.6l2.85 6.06 6.65.78-4.92 4.55 1.31 6.57L12 17.27l-5.89 3.29 1.31-6.57L2.5 9.44l6.65-.78z"/></svg><svg class="on" viewBox="0 0 24 24" aria-hidden="true" style="clip-path: inset(0 100% 0 0)"><path fill="currentColor" d="M12 2.6l2.85 6.06 6.65.78-4.92 4.55 1.31 6.57L12 17.27l-5.89 3.29 1.31-6.57L2.5 9.44l6.65-.78z"/></svg></span><span class="star"><svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.6l2.85 6.06 6.65.78-4.92 4.55 1.31 6.57L12 17.27l-5.89 3.29 1.31-6.57L2.5 9.44l6.65-.78z"/></svg><svg class="on" viewBox="0 0 24 24" aria-hidden="true" style="clip-path: inset(0 100% 0 0)"><path fill="currentColor" d="M12 2.6l2.85 6.06 6.65.78-4.92 4.55 1.31 6.57L12 17.27l-5.89 3.29 1.31-6.57L2.5 9.44l6.65-.78z"/></svg></span></div>
+              <div class="sec__count">Promedio de 1.240 calificaciones de usuarios</div>
+            </div>
+          </div>
+          <p class="sec__disclaimer">Esta calificación mide <b>solo la seguridad de Billetera Nexo</b> al pagar. No califica el producto ni a Tienda Campus.</p>
+        </section>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn--buy" type="button" data-buy>Confirmar compra</button>
+        <button class="btn btn--leave" type="button" data-leave>Abandonar compra</button>
+        <p class="safe-note">Compra simulada: no se cobra nada ni se piden datos bancarios.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<div class="modal" id="resultado" role="dialog" aria-modal="true" aria-labelledby="res-t">
+  <div class="modal__box">
+    <h2 id="res-t" data-titulo></h2>
+    <p data-texto></p>
+    <div class="reg" data-reg aria-label="Dato que registraría la plataforma"></div>
+    <p>Al terminar, a cada participante se le explica que la calificación fue armada para el experimento.</p>
+    <button class="btn btn--buy" type="button" data-close>Cerrar</button>
+  </div>
+</div>
+
+<footer class="foot">Tienda Campus y Billetera Nexo son ficticias. Prototipo de un trabajo práctico de la Universidad de San Andrés (C094, primavera 2026).</footer>
+<script src="script.js"></script>
+</body>
+</html>
