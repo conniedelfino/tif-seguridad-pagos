@@ -219,23 +219,6 @@ def index_page():
     {cards}</div>
   </section>
 
-  <section class="sect" aria-labelledby="v-t">
-    <h2 id="v-t">Qué medimos</h2>
-    <p>Pregunta de investigación: ¿cómo influye la información sobre la seguridad del método de pago digital en el porcentaje de estudiantes de 18 a 25 años de UdeSA que finalizan una compra?</p>
-    <div class="vars">
-      <div class="vbox">
-        <h3>Variable independiente</h3>
-        <strong>Calificación de seguridad del pago</strong>
-        <p>1, 2,5 o 5 estrellas sobre 5, según el grupo. Está siempre en el mismo lugar, con el mismo tamaño, y aclara que califica el pago y no el producto ni la tienda.</p>
-      </div>
-      <div class="vbox">
-        <h3>Variable dependiente</h3>
-        <strong>Decisión de finalizar la compra</strong>
-        <p>Dicotómica: 1 si el participante toca "Confirmar compra", 0 si toca "Abandonar compra". Después se calcula el porcentaje de compras finalizadas por grupo.</p>
-      </div>
-    </div>
-  </section>
-
   <section class="sect" aria-labelledby="f-t">
     <h2 id="f-t">Cómo lo recorre un participante</h2>
     <p>Una sola sesión (diseño transversal), en laboratorio, con las mismas instrucciones para todos.</p>
