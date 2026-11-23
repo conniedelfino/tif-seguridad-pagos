@@ -266,3 +266,8 @@ body.participante .summary { top: 20px; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* Portada mínima */
+.hero--min { min-height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: center; padding-top: 48px; padding-bottom: 64px; }
+.hero--min p.lead { font-family: var(--serif); font-weight: 600; color: var(--ink); font-size: clamp(22px, 3vw, 34px); line-height: 1.3; letter-spacing: -.015em; max-width: 34ch; }
+.hero--min p.team { margin-top: 28px; font-size: 15px; }

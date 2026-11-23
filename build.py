@@ -50,7 +50,7 @@ def head(title, desc):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=3">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f4fd8'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3ETC%3C/text%3E%3C/svg%3E">
 </head>
 """
@@ -165,7 +165,6 @@ def grupo_page(key):
       <div class="actions">
         <button class="btn btn--buy" type="button" data-buy>Confirmar compra</button>
         <button class="btn btn--leave" type="button" data-leave>Abandonar compra</button>
-        <p class="safe-note">Compra simulada: no se cobra nada ni se piden datos bancarios.</p>
       </div>
     </aside>
   </div>
@@ -182,84 +181,22 @@ def grupo_page(key):
 </div>
 
 <footer class="foot">Tienda Campus y Billetera Nexo son ficticias. Prototipo de un trabajo práctico de la Universidad de San Andrés (C094, primavera 2026).</footer>
-<script src="script.js"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
 """
 
 
 def index_page():
-    cards = ""
-    for k, g in GRUPOS.items():
-        cards += f"""<a class="gcard" href="grupo-{k}.html" style="--c:{g['color']}">
-      <span class="gcard__tag">Grupo {g['label']}</span>
-      <h3>{g['nombre']}</h3>
-      {stars(g['score'])}
-      <p>{g['desc']}</p>
-      <span class="gcard__go">Ver la página de este grupo →</span>
-    </a>
-    """
     return head(
-        "Seguridad percibida y compra online",
-        "Prototipo de la plataforma de compra para el experimento sobre seguridad percibida de medios de pago digitales.",
+        "Prototipo · Tienda Campus",
+        "Prototipo de la plataforma de compra del experimento.",
     ) + f"""<body>
 {rbar("index")}
-<header class="hero">
-  <div class="kicker">TIF · Introducción a las Ciencias · UdeSA · Primavera 2026</div>
-  <h1>¿Una calificación de seguridad <em>cambia</em> la decisión de comprar?</h1>
+<main class="hero hero--min">
+  <h1 class="sr-only">Prototipo de la plataforma de compra</h1>
   <p class="lead">Este es el prototipo de la tienda ficticia donde haríamos el experimento. Los tres grupos ven la misma página, con el mismo producto, el mismo precio y el mismo método de pago. Lo único que cambia es el puntaje de seguridad que aparece junto al botón de confirmar.</p>
   <p class="team">Aguilar Quesada, Camila · Andersson, Franco · Delfino Chevallier, Constanza · Son, Micaela</p>
-</header>
-
-<main class="wrap">
-  <section class="sect" aria-labelledby="g-t">
-    <h2 id="g-t">Las tres condiciones</h2>
-    <p>Cada participante entra a una sola de estas páginas, asignado al azar. Ninguno ve las de los otros grupos.</p>
-    <div class="groups">
-    {cards}</div>
-  </section>
-
-  <section class="sect" aria-labelledby="f-t">
-    <h2 id="f-t">Cómo lo recorre un participante</h2>
-    <p>Una sola sesión (diseño transversal), en laboratorio, con las mismas instrucciones para todos.</p>
-    <ol class="flow">
-      <li><b>Encuesta previa</b>Solo entran quienes dijeron que querían comprar el producto X.</li>
-      <li><b>Asignación al azar</b>Unas 150 personas, repartidas en tres grupos de 50.</li>
-      <li><b>La tienda</b>Ve la página de su grupo, con el producto ya en el carrito.</li>
-      <li><b>La decisión</b>Confirma o abandona. La plataforma registra grupo y decisión.</li>
-      <li><b>Cierre</b>Se le explica que la calificación fue diseñada para el experimento.</li>
-    </ol>
-  </section>
-
-  <section class="sect" aria-labelledby="c-t">
-    <h2 id="c-t">Qué queda fijo y qué cambia</h2>
-    <p>Controlar la página entera nos deja atribuir una diferencia entre grupos a la calificación y no a otra cosa (validez interna).</p>
-    <div class="tablewrap">
-    <table class="ctable">
-      <thead><tr><th>Elemento</th><th>Grupo A</th><th>Grupo B</th><th>Grupo C</th></tr></thead>
-      <tbody>
-        <tr><td>Producto</td><td colspan="3">Auriculares Sonaro Air 2 (ejemplo del producto X)</td></tr>
-        <tr><td>Precio</td><td colspan="3">$45.000</td></tr>
-        <tr><td>Método de pago</td><td colspan="3">Billetera Nexo (ficticia, para que nadie llegue con una opinión previa)</td></tr>
-        <tr><td>Diseño, ubicación y tamaño de la calificación</td><td colspan="3">Idénticos</td></tr>
-        <tr class="var"><td>Calificación de seguridad</td><td>1 / 5</td><td>5 / 5</td><td>2,5 / 5</td></tr>
-      </tbody>
-    </table>
-    </div>
-  </section>
-
-  <section class="sect" aria-labelledby="p-t">
-    <h2 id="p-t">Lo que esperamos ver</h2>
-    <p>Si la hipótesis es correcta, el porcentaje de compras finalizadas debería ordenarse B &gt; C &gt; A. Si los porcentajes son parecidos o el orden se invierte, la hipótesis se debilita.</p>
-    <div class="pred" role="img" aria-label="Predicción ilustrativa: grupo B el más alto, C intermedio, A el más bajo">
-      <div class="pred__col"><div class="pred__bar" style="height:28%;--c:var(--grp-a)"></div><span class="pred__lab">A · 1★</span></div>
-      <div class="pred__col"><div class="pred__bar" style="height:92%;--c:var(--grp-b)"></div><span class="pred__lab">B · 5★</span></div>
-      <div class="pred__col"><div class="pred__bar" style="height:58%;--c:var(--grp-c)"></div><span class="pred__lab">C · 2,5★</span></div>
-    </div>
-    <p class="pred-note">Las alturas son ilustrativas: muestran el orden esperado, no resultados.</p>
-  </section>
-
-  <footer class="closing">Prototipo sin base de datos: las decisiones que se tomen acá no se guardan. Tienda Campus, Sonaro y Billetera Nexo son marcas inventadas para el estudio.</footer>
 </main>
 </body>
 </html>
