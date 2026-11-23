@@ -157,12 +157,8 @@ def grupo_page(key):
           <h3 class="sec__title" id="sec-t">{SHIELD}Calificación de seguridad del método de pago digital</h3>
           <div class="sec__score">
             <div class="sec__num">{fmt(s)}<small> / 5</small></div>
-            <div>
-              {stars(s)}
-              <div class="sec__count">Promedio de 1.240 calificaciones de usuarios</div>
-            </div>
+            {stars(s)}
           </div>
-          <p class="sec__disclaimer">Esta calificación mide <b>solo la seguridad de Billetera Nexo</b> al pagar. No califica el producto ni a Tienda Campus.</p>
         </section>
       </div>
 
